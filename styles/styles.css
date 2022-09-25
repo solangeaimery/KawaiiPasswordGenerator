@@ -1,0 +1,237 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(imagenes/fondo\ kawaii.jpeg);
+    font-family: 'Quantico', sans-serif;    
+}
+h1{
+    color: #E188A8;;
+    font-size: 35px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+}
+.cajah1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagenes/otrofondokawaii.jpeg);
+    margin-bottom: 30px;
+    border: #F3D6E6 solid;
+    border-width: 5px;
+    box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+    -webkit-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+    -moz-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+    border-radius: 10px;
+    width: auto;
+    
+}
+
+.cajah1 img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #e4739c;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px #F3D6E6 solid
+}
+
+input[type='checkbox']:checked:after {
+    width: 12px;
+    height: 10px;
+    position: relative;
+    background-color: #e4739c;
+    content: ' ✔ ';
+    visibility: visible;
+    border: 2px #F3D6E6 solid;
+    color: white;
+
+    
+}
+
+.cajaContraseña{
+    border: #F3D6E6 solid;
+    border-width: 5px;
+    margin-top: 10px;
+    width: 400px;
+    height: auto;
+    background-image: url(imagenes/otrofondokawaii.jpeg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+-webkit-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+-moz-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+border-radius: 10px;
+}
+
+.cajaPyBoton{
+    display: flex;
+    align-items: center;
+}
+
+.cajaContraseña img{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+
+.cajaOrden{
+    display: flex;
+    flex-direction: column;
+}
+.botonCrear{
+    color: #E188A8;
+    background-image: url(imagenes/botonCustomizado.png);
+    background-size: 150px, 35px;
+    border: none;
+    width: 150px;
+    height: 46px;
+    margin: 5px;
+    font-weight: bolder;
+    font-family: 'Quantico', sans-serif; 
+    font-size: 18px;
+    box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+-webkit-box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+-moz-box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+margin-bottom: 10px;
+    
+}
+
+.botonCrear:hover{
+    filter: opacity(80%);
+    cursor: pointer;
+}
+
+.botonCopiar{
+    color: #E188A8;
+    background-image: url(imagenes/botonCustomizado.png);
+    background-size: 150px, 35px;
+    width: 150px;
+    height: 46px;
+    margin: 5px;
+    font-weight: bold;
+    font-family: 'Quantico', sans-serif; 
+    font-size: 20px;
+    border: transparent;
+    box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+-webkit-box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+-moz-box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+margin-bottom: 10px;
+}
+.botonCopiar:hover{
+    filter: opacity(80%);
+    cursor: pointer;
+
+}
+
+.botonRecargar{
+    width: 30px;
+    height: 30px;
+    background-color: #F3D6E6;
+    border: transparent;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #E188A8;
+    font-size: 16px;
+    border: #BC8A9F solid;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+-webkit-box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+-moz-box-shadow: 1px 1px 10px 1px rgba(210,139,174,0.75);
+}
+
+.botonRecargar:hover{
+    filter: opacity(80%);
+    cursor: pointer;
+}
+
+#contrasenia{
+    margin: 10px;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+    border: #ca96ac solid;
+    border-width: 1px;
+    background-color:#f3c9da;
+    font-size: 20px;
+    color: #E188A8;
+    font-family: 'Quantico', sans-serif;
+    text-align: center;
+    
+}
+
+.cajaReglas{
+    text-align: start;
+    border: #F3D6E6 solid;
+    border-width: 5px;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 400px;
+    height: auto;
+    background-image: url(imagenes/otrofondokawaii.jpeg);
+    box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+-webkit-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+-moz-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
+display: flex;
+flex-direction: column;
+margin-bottom: 50px;
+
+    }
+
+.cajaReglas h3{
+        color: #E188A8;
+        margin-left: 10px;
+        font-size: 22px;
+        margin-bottom: -10px;
+        margin-top: -5px;
+    }
+
+.cajaReglas span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cajaReglas img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.cajaReglas label{
+        width: 32%;
+        font-size: 18px;
+        font-weight: bold;
+        color: #E188A8;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .cajaReglas p {
+        font-size: 10px;
+        color: #f13278;
+    }
+    .cajainputs{
+        display: flex;
+        flex-direction: row;
+    }
