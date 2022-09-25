@@ -4,7 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url();
+    background-image:  url(/Users/solaimery/Desktop/githubrepository/kawaiiPasswordGenerator/imagenes/fondo\ kawaii.jpeg);
     font-family: 'Quantico', sans-serif;    
 }
 h1{
@@ -17,7 +17,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(imagenes/otrofondokawaii.jpeg);
+    background-image: url(/Users/solaimery/Desktop/githubrepository/kawaiiPasswordGenerator/imagenes/otrofondokawaii.jpeg)
+;
     margin-bottom: 30px;
     border: #F3D6E6 solid;
     border-width: 5px;
@@ -71,7 +72,7 @@ input[type='checkbox']:checked:after {
     margin-top: 10px;
     width: 400px;
     height: auto;
-    background-image: url(imagenes/otrofondokawaii.jpeg);
+    background-image: url(/Users/solaimery/Desktop/githubrepository/kawaiiPasswordGenerator/imagenes/otrofondokawaii.jpeg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +100,7 @@ border-radius: 10px;
 }
 .botonCrear{
     color: #E188A8;
-    background-image: url(imagenes/botonCustomizado.png);
+    background-image: url(/Users/solaimery/Desktop/githubrepository/kawaiiPasswordGenerator/imagenes/botonCustomizado.png);
     background-size: 150px, 35px;
     border: none;
     width: 150px;
@@ -122,7 +123,7 @@ margin-bottom: 10px;
 
 .botonCopiar{
     color: #E188A8;
-    background-image: url(imagenes/botonCustomizado.png);
+    background-image: url(/Users/solaimery/Desktop/githubrepository/kawaiiPasswordGenerator/imagenes/botonCustomizado.png);
     background-size: 150px, 35px;
     width: 150px;
     height: 46px;
@@ -187,7 +188,7 @@ margin-bottom: 10px;
     margin-top: 30px;
     width: 400px;
     height: auto;
-    background-image: url(imagenes/otrofondokawaii.jpeg);
+    background-image: url(/Users/solaimery/Desktop/githubrepository/kawaiiPasswordGenerator/imagenes/otrofondokawaii.jpeg);
     box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
 -webkit-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
 -moz-box-shadow: -1px -1px 41px 3px rgba(148,132,142,0.75);
