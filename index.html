@@ -6,9 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KawaiiPasswordGenerator</title>
     <link rel="stylesheet" href="/Users/solaimery/Desktop/GitHub Repositorys/generador de contrasenias/styles/styles.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@700&family=Jost:ital,wght@0,600;1,800&family=Oleo+Script+Swash+Caps&family=Quantico:ital@1&family=Rajdhani:wght@300&family=Secular+One&family=Signika:wght@300;600&display=swap"
+        rel="stylesheet">
 </head>
 <body>
+    <div class="cajah1">
+        <img src="imagenes/corazonbrillo.png" alt="">
+        <H1>Kawaii Password Generator</H1>
+        <img src="imagenes/corazonbrillo.png" alt="">
+    </div>
+
+    <form action="" id="form">
+        <div class="cajaContraseña">
+            <img src="imagenes/hello kitty kawaii.png" alt="">
+            <div class="cajaOrden">
+                <div class="cajaPyBoton">
+                    <p id="contrasenia"></p>
+                    <button class="botonRecargar" id="botonRecargar">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+                <div class="cajaBotones">
+                    <button class="botonCrear" id="botonCrear">Crear</button>
+                    <button class="botonCopiar" id="botonCopiar">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="cajaReglas">
+            <span>
+                <h3>Personalice su contraseña</h3>
+                <img src="imagenes/corazonespixel.png.png" alt="">
+            </span>
+
+            <div class="cajainputs">
+                <label for="longitud">Longitud
+                    <p><input type="radio" name="longitud" class="longitud" value="12">12 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" value="9">9 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" value="6">6 caracteres</p>
+                </label>
+                <label for="reglas">Reglas
+                    <p><input type="radio" name="reglas" class="reglas" id="soloLetras" value="soloLetras">Solo letras
+                    </p>
+                    <p><input type="radio" name="reglas" class="reglas" id="soloNumeros" value="soloNumeros">Solo
+                        Numeros</p>
+                    <p><input type="radio" name="reglas" class="reglas" id="todosLosCaracteres"
+                            value="todosLosCaracteres">Todos los caracteres</p>
+                </label>
+                <label for="caracteres">Caracteres
+                    <p><input type="checkbox" name="longitud" class="mayusculas" disabled> Mayusculas</p>
+                    <p><input type="checkbox" name="longitud" class="minusculas" disabled> Minusculas</p>
+                    <p><input type="checkbox" name="longitud" class="numeros" disabled>Numeros</p>
+                    <p><input type="checkbox" name="longitud" class="simbolos" disabled>Simbolos</p>
+                </label>
+
+            </div>
+        </div>
+    </form>
     <script src="/Users/solaimery/Desktop/GitHub Repositorys/generador de contrasenias/js/script.js"></script>
 </body>
 </html>
