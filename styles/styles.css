@@ -235,3 +235,58 @@ margin-bottom: 50px;
         display: flex;
         flex-direction: row;
     }
+
+    @media(min-width:0px) and (max-width: 750px){
+        .cajaContraseña{
+            width: auto;
+        }
+
+        #contrasenia{
+            width: 180px;
+        }
+        .cajaOrden{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .cajaPyBoton{
+            justify-content: center;
+        }
+        .cajaBotones{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cajainputs{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 20px;
+        }
+        .cajaReglas label{
+            width: 45%;
+            font-size: 20px;
+            margin: 5px;
+        }
+        .cajaReglas p {
+            font-size: 15px;
+            color: #f13278;
+            margin: 10px;}
+
+        .cajaReglas span{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            }
+        .cajaReglas img {
+            display: none;
+        }   
+        .cajaReglas h3{
+            margin-left: 10px;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
