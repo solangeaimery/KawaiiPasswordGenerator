@@ -14,11 +14,11 @@
         rel="stylesheet">
 </head>
 <body>
-    <div class="cajah1">
+    <section class="cajah1">
         <img src="../kawaiiPasswordGenerator/imagenes/moño1.png" alt="">
         <H1>Kawaii Password Generator</H1>
         <img src="../kawaiiPasswordGenerator/imagenes/moño2.png" alt="">
-    </div>
+    </section>
 
     <form action="" id="form">
         <div class="cajaContraseña">
@@ -46,9 +46,9 @@
 
             <div class="cajainputs">
                 <label for="longitud">Longitud
-                    <p><input type="radio" name="longitud" class="longitud" value="12">12 caracteres</p>
-                    <p><input type="radio" name="longitud" class="longitud" value="9">9 caracteres</p>
-                    <p><input type="radio" name="longitud" class="longitud" value="6">6 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" id="doceCaracteres" value="12">12 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" id="nueveCaracteres" value="9">9 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" id="seisCaracteres" value="6">6 caracteres</p>
                 </label>
                 <label for="reglas">Reglas
                     <p><input type="radio" name="reglas" class="reglas" id="soloLetras" value="soloLetras">Solo letras
@@ -68,6 +68,11 @@
             </div>
         </div>
     </form>
+    <div id="ventanaModal" class="modal">
+        <div class="contenido-modal">
+            <p>🎀​ Copiado en el portapapeles! 🎀​</p>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

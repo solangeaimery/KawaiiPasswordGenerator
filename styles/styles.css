@@ -7,6 +7,42 @@ body{
     background-image:  url(../imagenes/fondokawaii.jpeg);
     font-family: 'Quantico', sans-serif;    
 }
+/* ventana modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.2); 
+}
+.contenido-modal {
+    position: relative;
+    background-image: url(../imagenes/otrofondokawaii.jpeg);
+    margin: auto;
+    padding: 20px;
+    width: 20%;
+    height: 50px;
+    -webkit-animation-name: animarLeft;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarLeft;
+    animation-duration: 0.5s;
+    color: #E188A8;
+    border: #F3D6E6 solid;
+    border-width: 5px;
+    border-radius: 5px;
+    
+}
+
+@keyframes animarLeft {
+    from {left:-300px; opacity:0}
+    to {left:0; opacity:1}
+}
 h1{
     color: #E188A8;;
     font-size: 35px;
@@ -121,7 +157,7 @@ margin-bottom: 10px;
     cursor: pointer;
 }
 
-.botonCopiar{
+#botonCopiar{
     color: #E188A8;
     background-image: url(../imagenes/botonCustomizado.png);
     background-size: 150px, 35px;
@@ -238,7 +274,11 @@ margin-bottom: 50px;
     }
 
     @media(min-width:0px) and (max-width: 750px){
+        .cajah1{
+            display: none;
+        }
         .cajaContraseña{
+            margin: 10px;
             width: auto;
         }
 
@@ -265,6 +305,9 @@ margin-bottom: 50px;
             align-items: flex-start;
             margin-left: 20px;
         }
+        .cajaReglas{
+            width: auto;
+        }
         .cajaReglas label{
             width: 45%;
             font-size: 20px;
@@ -285,9 +328,16 @@ margin-bottom: 50px;
             display: none;
         }   
         .cajaReglas h3{
-            margin-left: 10px;
+            margin: 10px;
             font-size: 25px;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
+    }
+    .contenido-modal {
+        width: 200px;
+        
+    }
+
+    .contenido-modal p {
+    margin-top: 5px;
+        
     }

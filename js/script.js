@@ -20,11 +20,11 @@ const $contrasenia = $("#contrasenia")
 const $btnCrear = $("#botonCrear")
 const $btnCopiar = $("#botonCopiar")
 const $btnRecargar = $("#botonRecargar")
+const $ventanaModal = $("#ventanaModal")
 
 //funciones
 
 const longitudElegida = () => {
-    console.log("se ejecuto longitud elegida")
     for (radio of $$longitud) {
         if (radio.checked) {
             const longitud = radio.value
@@ -34,7 +34,6 @@ const longitudElegida = () => {
 }
 
 const reglasElegidas = () => {
-    console.log("se ejecuto reglas elegidas")
     for (regla of $$reglas) {
         if (regla.checked) {
             return regla.value
@@ -44,10 +43,11 @@ const reglasElegidas = () => {
 }
 
 const caracteresElegidos = () => {
-    console.log("se ejecuto caracteres elegida")
     if (reglasElegidas() === "soloLetras") {
         $mayusculas.removeAttribute("disabled")
         $minusculas.removeAttribute("disabled")
+        $mayusculas.checked = true
+        $minusculas.checked = true
         $numeros.setAttribute("disabled", "")
         $numeros.checked = false
         $simbolos.setAttribute("disabled", "")
@@ -55,6 +55,7 @@ const caracteresElegidos = () => {
     }
     if (reglasElegidas() === "soloNumeros") {
         $numeros.removeAttribute("disabled")
+        $numeros.checked = true
         $mayusculas.setAttribute("disabled", "")
         $mayusculas.checked = false
         $minusculas.setAttribute("disabled", "")
@@ -67,6 +68,10 @@ const caracteresElegidos = () => {
         $minusculas.removeAttribute("disabled")
         $numeros.removeAttribute("disabled")
         $simbolos.removeAttribute("disabled")
+        $mayusculas.checked = true
+        $minusculas.checked = true
+        $simbolos.checked = true
+        $numeros.checked = true
     }
 }
 
@@ -77,7 +82,6 @@ const xAleatorio = (array) => {
 }
 
 const generarContraseniaLarga = () => {
-    console.log("se ejecuto generarcontrasenialarga")
     for (let i = 0; i < 20; i++) {
         xAleatorio(arrletrasMinus)
         xAleatorio(arrletrasMayus)
@@ -89,27 +93,22 @@ const generarContraseniaLarga = () => {
 //generar contraseña
 
 const contraseniaLargaFiltrada = () => {
-    console.log("se ejecuto contrasenialargafiltrada")
     if (!$mayusculas.checked) {
-        console.log("entre al if mayus")
         arrAleatorio = arrAleatorio.filter(item => {
             return !arrletrasMayus.includes(item)
         })
     }
     if (!$minusculas.checked) {
-        console.log("entre al if minus")
         arrAleatorio = arrAleatorio.filter(item => {
             return !arrletrasMinus.includes(item)
         })
     }
     if (!$numeros.checked) {
-        console.log("entre al if numeros")
         arrAleatorio = arrAleatorio.filter(item => {
             return !arrNumeros.includes(item)
         })
     }
     if (!$simbolos.checked) {
-        console.log("entre al if simbolos")
         arrAleatorio = arrAleatorio.filter(item => {
             return !arrSimbolos.includes(item)
         })
@@ -118,7 +117,10 @@ const contraseniaLargaFiltrada = () => {
 }
 let contraseniaCortada
 const generarContraseniaCortada = () => {
-    console.log("se ejecuto generarcontraseniacortada")
+    if (longitudElegida() === undefined) {
+        console.log("nada esta check")
+        alert("Debe seleccionar una opcion")
+    }
     if (longitudElegida() === 12) {
         contraseniaCortada = arrAleatorio.slice(0, 12)
 
@@ -141,7 +143,6 @@ const randomizar = (array) => {
 
 let contraseniaFinal
 const generarContraseniaFinal = () => {
-    console.log("se ejecuto generar contraseniafinal")
     arrAleatorio = []
     generarContraseniaLarga()
     contraseniaLargaFiltrada()
@@ -164,11 +165,19 @@ reglasFuncionalidad()
 
 
 $btnCrear.addEventListener("click", (evento) => {
+    if (longitudElegida() === undefined) {
+        evento.preventDefault()
+        return alert("Debe seleccionar una opcion")
+    }
     evento.preventDefault()
     generarContraseniaFinal()
 })
 
 $btnRecargar.addEventListener("click", (evento) => {
+    if (longitudElegida() === undefined) {
+        evento.preventDefault()
+        return alert("Debe seleccionar una opcion")
+    }
     evento.preventDefault()
     generarContraseniaFinal()
 })
@@ -177,5 +186,10 @@ $btnCopiar.addEventListener("click", (e) => {
     e.preventDefault()
     let textToCopy = $contrasenia.innerText
     navigator.clipboard.writeText(textToCopy)
-    alert("copiado en el portapapeles")
+    $ventanaModal.style.display = "block"
+    setTimeout(modal => {
+        $ventanaModal.style.display = "none"
+    }, 1000)
 })
+
+
