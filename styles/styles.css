@@ -206,7 +206,7 @@ margin-bottom: 50px;
         margin-top: -5px;
     }
 
-.cajaReglas span{
+.cajaReglas div{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -218,7 +218,7 @@ margin-bottom: 50px;
     margin-left: 10px;
 }
 
-.cajaReglas label{
+.ordeninputs{
         width: 32%;
         font-size: 18px;
         font-weight: bold;
