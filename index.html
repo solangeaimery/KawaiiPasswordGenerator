@@ -15,15 +15,23 @@
     <link rel="icon" href="imagenes/corazonbrillo.png" type="image/png" />
 </head>
 <body>
+<<<<<<< HEAD
     <section class="cajah1">
         <img src="../kawaiiPasswordGenerator/imagenes/moño1.png" alt="">
         <H1>Kawaii Password Generator</H1>
         <img src="../kawaiiPasswordGenerator/imagenes/moño2.png" alt="">
     </section>
+=======
+    <div class="cajah1">
+        <img src="../kawaiiPasswordGenerator/imagenes/moño1.png" alt="">
+        <H1>Kawaii Password Generator</H1>
+        <img src="../kawaiiPasswordGenerator/imagenes/moño2.png" alt="">
+    </div>
+>>>>>>> RamaDesarrollo
 
-    <form action="" id="form">
+    <form action="contrasenia" id="form">
         <div class="cajaContraseña">
-            <img src="imagenes/hello kitty kawaii.png" alt="">
+            <img src="imagenes/hellokittykawaii.png" alt="">
             <div class="cajaOrden">
                 <div class="cajaPyBoton">
                     <p id="contrasenia"></p>
@@ -40,32 +48,40 @@
             </div>
         </div>
         <div class="cajaReglas">
-            <span>
+            <div>
                 <h3>Personalice su contraseña</h3>
                 <img src="imagenes/corazonespixel.png.png" alt="">
-            </span>
+            </div>
 
             <div class="cajainputs">
+<<<<<<< HEAD
                 <label for="longitud">Longitud
                     <p><input type="radio" name="longitud" class="longitud" id="doceCaracteres" value="12">12 caracteres</p>
                     <p><input type="radio" name="longitud" class="longitud" id="nueveCaracteres" value="9">9 caracteres</p>
                     <p><input type="radio" name="longitud" class="longitud" id="seisCaracteres" value="6">6 caracteres</p>
                 </label>
                 <label for="reglas">Reglas
+=======
+                <div class="ordeninputs">Longitud
+                    <p><input type="radio" name="longitud" class="longitud" value="12">12 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" value="9">9 caracteres</p>
+                    <p><input type="radio" name="longitud" class="longitud" value="6">6 caracteres</p>
+                </div>
+                <div class="ordeninputs">Reglas
+>>>>>>> RamaDesarrollo
                     <p><input type="radio" name="reglas" class="reglas" id="soloLetras" value="soloLetras">Solo letras
                     </p>
                     <p><input type="radio" name="reglas" class="reglas" id="soloNumeros" value="soloNumeros">Solo
                         Numeros</p>
                     <p><input type="radio" name="reglas" class="reglas" id="todosLosCaracteres"
                             value="todosLosCaracteres">Todos los caracteres</p>
-                </label>
-                <label for="caracteres">Caracteres
+                    </div>
+                <div class="ordeninputs">Caracteres
                     <p><input type="checkbox" name="longitud" class="mayusculas" disabled> Mayusculas</p>
                     <p><input type="checkbox" name="longitud" class="minusculas" disabled> Minusculas</p>
                     <p><input type="checkbox" name="longitud" class="numeros" disabled>Numeros</p>
                     <p><input type="checkbox" name="longitud" class="simbolos" disabled>Simbolos</p>
-                </label>
-
+                </div>
             </div>
         </div>
     </form>
